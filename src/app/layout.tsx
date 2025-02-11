@@ -8,7 +8,6 @@ async function Footer() {
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book`,
     { cache: "force-cache" }
   );
-  console.log(response);
   if (!response.ok) {
     return <footer>제작 @seono-na</footer>;
   }
