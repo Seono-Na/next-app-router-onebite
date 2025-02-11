@@ -1,6 +1,9 @@
 import BookItem from "@/components/book-item";
 import { BookData } from "@/types";
 
+// export const dynamic = "force-static";
+// => 동적 함수의 값을 빈 값으로 만들어서 동적인 기능이 동작하지 않음음
+
 export default async function Page({
   searchParams,
 }: {
