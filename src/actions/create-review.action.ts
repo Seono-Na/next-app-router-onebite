@@ -1,9 +1,8 @@
 "use server";
 
-import { error } from "console";
-import { revalidatePath, revalidateTag } from "next/cache";
+import { revalidateTag } from "next/cache";
 
-export async function createReviewAction(_: any, formData: FormData) {
+export async function createReviewAction(_: unknown, formData: FormData) {
   const bookId = formData.get("bookId")?.toString();
   const content = formData.get("content")?.toString();
   const author = formData.get("author")?.toString();
